@@ -4,11 +4,12 @@ int main ()
 {
     int n, i, j, k, r;
     printf ("n*(n+1) augmented matrix에 대해서만 작동합니다\n");
+    printf ("pivot column은 입력될 때 0이 아니어야 합니다.\n");
     printf ("row의 수를 입력하세요: ");
     scanf ("%d", &n);
     printf ("------------------------------\n");
     
-    double matrix [n] [n+1];
+    double matrix [n] [n+1]; //matix 입력받기
     for (i=0; i<n; i++) {
         for (j=0; j<n+1; j++) {
             scanf ("%lf", &matrix [i] [j]);
